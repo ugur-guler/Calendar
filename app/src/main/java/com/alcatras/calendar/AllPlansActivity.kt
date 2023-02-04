@@ -12,6 +12,7 @@ class AllPlansActivity : AppCompatActivity() {
         setContentView(binding.root)
         val intent=intent
         var time= intent.getSerializableExtra("time") as Time
-        binding.textView.text=time.day.toString()+" "+time.month.toString() +" " +time.year.toString()
+        binding.Date.text=time.day.toString()+" "+time.month.toString() +" " +time.year.toString()
+
     }
 }
